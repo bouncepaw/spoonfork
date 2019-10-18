@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator"
+          content="HTML Tidy for HTML5 for Linux version 5.7.16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>
+      Spoonfork
+    </title>
+    <style>
+    html, body {
+    }
+    .layer {
+    height: 100%;
+    width: 100%;
+    }
+    .layer--back {
+    display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <div class="scene layer layer--back">
+        <h1>
+          Spoonfork [Adventure]
+        </h1>
+        <div class="scene__output">
+          <object type="image/svg+xml"
+               data="sprite/young_woodcutter.svg"
+               width="400px"
+               height="400px">
+          </object>
+        </div>
+      </div>
+      <div class="main-menu layer layer--front">
+        <h1>
+          Spoonfork
+        </h1>
+        <p>
+          Choose what to do:
+        </p>
+        <ul>
+          <li>
+            <button class="main-menu__button"
+                onclick="mainMenuClickButton('knight')">New game as Knight</button>
+          </li>
+          <li>
+            <button class="main-menu__button"
+                onclick="mainMenuClickButton('wizard')">New game as Wizard</button>
+          </li>
+          <li>
+            <button class="main-menu__button"
+                onclick="mainMenuClickButton('load')">Load game</button>
+          </li>
+        </ul>
+      </div>
+      <div id="stats"
+           class="layer layer--back">
+        Stats
+      </div>
+      <div class="layer layer--back controls">
+        <div class="controls__dir controls__left">
+          <span class="controls__arrow">←</span> <span class="controls__text">Left</span>
+        </div>
+        <div class="controls__dir controls__down">
+          <span class="controls__arrow">↓</span> <span class="controls__text">Down</span>
+        </div>
+        <div class="controls__dir controls__up">
+          <span class="controls__arrow">↑</span> <span class="controls__text">Up</span>
+        </div>
+        <div class="controls__dir controls__right">
+          <span class="controls__arrow">→</span> <span class="controls__text">Right</span>
+        </div>
+      </div>
+    </div>
+    <script src="spoonfork.js"></script>
+    <script src="entity.js"></script>
+  </body>
+</html>
