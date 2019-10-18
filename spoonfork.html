@@ -4,8 +4,8 @@
     <meta name="generator"
           content="HTML Tidy for HTML5 for Linux version 5.7.16">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>
       Spoonfork
     </title>
@@ -27,6 +27,7 @@
         <h1>
           Spoonfork [Adventure]
         </h1>
+        <!-- This is where main action takes place. TODO: do something here. -->
         <div class="scene__output">
           <object type="image/svg+xml"
                data="sprite/young_woodcutter.svg"
@@ -35,6 +36,7 @@
           </object>
         </div>
       </div>
+      <!-- This is main menu seen at start. After choosing what to do, it is removed. TODO: make it usable. -->
       <div class="main-menu layer layer--front">
         <h1>
           Spoonfork
@@ -57,10 +59,7 @@
           </li>
         </ul>
       </div>
-      <div id="stats"
-           class="layer layer--back">
-        Stats
-      </div>
+      <!-- This is layer with controls that are shown when needed. See controls.js for more. TODO: make it in the shape of cross. -->
       <div class="layer layer--back controls">
         <div class="controls__dir controls__left">
           <span class="controls__arrow">←</span> <span class="controls__text">Left</span>
@@ -76,7 +75,8 @@
         </div>
       </div>
     </div>
-    <script src="spoonfork.js"></script>
+    <script src="spoonfork.js"></script> 
     <script src="entity.js"></script>
+    <script src="controls.js"></script>
   </body>
 </html>
